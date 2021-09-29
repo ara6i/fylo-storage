@@ -1,0 +1,101 @@
+:root {
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%); 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--Very-Dark-Blue);
+    font-size: 14px;
+    font-family: 'Raleway' ,sans-serif;
+    background-image: url(./images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+p {
+    color: var(--Pale-Blue);
+}
+span {
+    font-weight: bold;
+    color: var(--Pale-Blue);
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+ /* main-card design*/
+ .main-card {
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 0 auto;
+     
+ }
+ /* fylo-card design */
+ .fylo-card {
+     background-color: var(--Dark-Blue);
+     border-radius: 5px 100px 5px 5px;
+     border: none;
+     margin-right: 30px;
+     /* flex: 1 1 20%; */
+     
+ }
+
+ .fylo-content {
+     display: flex;
+     flex-direction: column;
+     padding: 30px 80px 20px 40px;
+
+ }
+ .fylo-logo {
+     margin-bottom: 10px;
+     
+ }
+ .fylo-logo img {
+     display: block;
+     width: 70%;
+ }
+ .fylo-icon {
+     width: 40%;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+     gap: 5px;
+     
+ }
+ .fylo-icon img {
+     display: block;
+     background-color: var(--Very-Dark-Blue);
+     padding: 10px;
+     width: 40px;
+     height: 40px;
+     border-radius: 5px;
+ }
+ /*storage-card design */
+ .storage-card {
+     width: max-content;
+     /* flex: 1 1 40%; */
+     background-color: var(--Dark-Blue);
+     border-radius: 2px;
+     position: relative;
+     top: 18px;
+     width: 50%;
+     height: 100px;
+ }
+ .storage-content {
+     display: flex;
+     flex-direction: column;
+     padding: 20px 30px 20px 30px;
+ }
